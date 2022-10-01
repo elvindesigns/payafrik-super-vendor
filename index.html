@@ -4,11 +4,12 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.png"/>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
   <link rel="stylesheet" href="./css/style.css">
   <script defer src="./js/app.js"></script>
   <title>PayAfrik for Vendors</title>
@@ -78,10 +79,18 @@
     </nav>
 
     <div class='headline container'>
-      <p>PAYAFRIK FOR VENDORS</p>
-      <h3>A Complete Solution<br>to Integrate your business <br>with PayAfrik</h3>
-      <p style='font-weight: 100;'>The Easiest way to integrate with your customers <br> with our all - in - one solution</p>
-      <button type="button" class="btn" style='background-color: rgb(255, 208, 0); max-width: 200px; margin-top: 15px; font-weight: 600;'>Get Started</button>
+      <div class="row" style='display: flex; align-items:center'>
+        <div class="col-md-6"><p>PAYAFRIK FOR VENDORS</p>
+          <h3>A Complete Solution<br>to Integrate your business <br>with PayAfrik</h3>
+          <p style='font-weight: 100;'>The Easiest way to integrate with your customers <br> with our all - in - one solution</p>
+          <button type="button" class="btn" style='background-color: rgb(255, 208, 0); max-width: 200px; margin-top: 15px; font-weight: 600;'>Get Started</button></div>
+        <div class="col-md-6">
+          <div class='hidden-img' style='position: relative; display: flex;'>
+            <img src="./img/man-vendor.png" alt="" style='width: 600px; bottom: 0; margin-top: 100px;' >
+            <img src="./img/abstract1.png" alt="" style='position: absolute;'>
+          </div>
+        </div>
+      </div>
     </div>
   </header>
   <section class='container' id='meters' > 
@@ -153,21 +162,107 @@
       </div>
       <div class='rightside col-md-6'>
         <h3 style='font-weight: 600; font-size:35px'>Understand your customers <br> Purchase patterns</h3>
-        <p style='font-weight: 100; font-size: 18px; margin-top: 15px; max-width: 500px;'>PayAfrik provides vendors with an ALL IN ONE solution that enable you to connect with your users with smart meters with our well documented and comprehensive APIs.</p>
+        <p style='font-weight: 100; font-size: 18px; margin-top: 15px; max-width: 500px;'>PayAfrik provides vendors with Useful customer insights from the payment and usage data.</p>
         <div style='display: flex;'>
           <ul style='margin-top: 30px;'>
-            <li>Confirm and Validate Customer</li>
-            <li>Recharge any Smart Meter from your Mobile App or Website</li>
-            <li>Retrieve Smart Meter balance and consumption</li>
-            <li>Turn OFF Smart Meter from anywhere at anytime</li>
+            <li>See your top customers in terms of usage and purchases carried out.</li>
+            <li>See your new and returning customers over any date range</li>
+            <li>See your busiest average time of day, and day of the week</li>
+
           </ul>
           
         </div>
         <a  href="#">Learn More >></a> 
       </div>
     </div>
+    <div class="row" style='margin-top: 80px;'>
+      <div class="col-md-12">
+        <div class='talk-to-us container'>
+          <div class="row">
+            <div class="col-md-6"><h3>We are here to serve you</h3></div>
+            <div class="col-md-6" style='display:flex; justify-content: center;'>
+              <button type="button" class="btn btn-warning" style='padding: 10px 50px !important; width: 100%;'>Get Started</button>
+              <div style='width: 20px;'></div>
+              <button type="button" class="btn btn-primary" style='padding: 10px 50px !important; width: 100%;'>Talk To Us</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
     
   </section>
+
+  <footer style='margin: 60px 0px 0px;'>
+    <div  style='background-color: rgb(192, 192, 192); height:1px; width:100%'></div>
+    <div class='container' style='margin-top: 60px;'>
+      <div class="row">
+        <div class="col-md-4">
+          <div >
+            <img src="./img/logo.png" style="max-width: 100px;margin-bottom: 20px;"alt="">
+            <p style='max-width: 300px;'>PayAfrik is a smart-tech company focused on using novel and innovative smart-technology to provide solutions to traditional and evolving challenges in the electricity sector in Africa</p>
+            <input type="email" name="" id="" placeholder='Email Address' class='subscribe-input'>
+            <button type="button" class="btn btn-primary" style='padding: 10px 50px !important; display: block;'>Subscribe</button>
+
+          </div>
+        </div>
+        <div class="col-md-8">
+          <div class="row">
+            <div class="col-md-4">
+              <h6>Company</h6>
+              <ul>
+                <a href=""><li>About Us</li></a>
+                <a href=""><li>Careers</li></a>
+                <a href=""><li>Our People</li></a>
+                <a href=""><li>Our Partners</li></a>
+              </ul>
+            </div>
+            <div class="col-md-4">
+              <h6>Developers</h6>
+              <ul>
+                <a href=""><li>APIs</li></a>
+                <a href=""><li>Libraries</li></a>
+                <a href=""><li>Plugins</li></a>
+              </ul>
+            </div>
+            <div class="col-md-4">
+              <h6>Legal</h6>
+              <ul>
+                <a href=""><li>Terms and Conditions</li></a>
+                <a href=""><li>Privacy Policy</li></a>
+                <a href=""><li>Cookie Policy</li></a>
+                <a href=""><li>Merchant Service Agreement</li></a>
+                <a href=""><li>ISO Policy</li></a>
+              </ul>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-4">
+              <h6>Contact Us</h6>
+              <ul>
+                <a href=""><li>info@payafrik.io</li></a>
+                <a href=""><li>customercare@payafrik.io</li></a>
+              </ul>
+            </div>
+            <div class="col-md-4">
+              <h6>Customer Care Lines</h6>
+              <ul>
+                <a href=""><li>0813 733 1445</li></a>
+
+              </ul>
+            </div>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container" style='margin-top: 60px;'>
+      <div class="row">
+        <div class="col-md-12">
+          <p>© Copyright PayAfrik Limited 2022 All Rights Reserved</p>
+        </div>
+      </div>
+    </div>
+  </footer>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
   

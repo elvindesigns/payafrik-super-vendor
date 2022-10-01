@@ -248,19 +248,21 @@ header{
 
 .hidden-img{
   opacity :0;
-  transform: translateY(100px);
+  /* transform: translateY(100px); */
+  scale: 0.8;
   transition: all 1s;
 }
 
 .show{
   opacity: 1;
-  transform: translateY(0px);
+  /* transform: translateY(0px); */
+  scale: 1;
   transition: all 1s;
 }
 
 #payments{
   background-color: #60aad517;
-  height: 100vh;
+  /* height: 100vh; */
   width: 100%;
 }
 
@@ -327,4 +329,49 @@ header{
   position: absolute;
   left: 2px;
   top: 10px;
+}
+
+.talk-to-us{
+  background-color: #0f0155;
+  padding: 50px;
+}
+.talk-to-us h3{
+  color: white;
+  font-size: 30px;
+  font-weight: 600;
+
+}
+footer{
+  font-family: 'Poppins', sans-serif;
+}
+footer p{
+  font-size: 14px;
+}
+footer h6{
+  font-weight: 600;
+}
+footer ul{
+  padding: 0px;
+  padding-top: 10px;
+}
+footer a{
+  text-decoration: none;
+  color: grey;
+}
+
+footer li{
+  margin-bottom: 12px;
+  margin-top: 12px;
+  list-style: none;
+  
+  font-size: 14px;
+}
+
+footer .subscribe-input{
+  width: 100%; 
+  padding: 8px; 
+  margin-bottom: 10px;
+  border:1px solid rgb(190, 190, 190); 
+  border-radius:5px; 
+  outline:none;
 }
