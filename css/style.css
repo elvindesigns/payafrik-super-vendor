@@ -167,7 +167,7 @@ header{
   font-family: 'Poppins', sans-serif;
   display: flex;
   justify-content: center;
-  height: 100%;
+  /* height: 100%; */
   color: white;
   flex-direction: column;
 }
@@ -179,9 +179,10 @@ header{
   font-weight: 600;
 }
 
-#meters{
+.payments{
   padding: 100px 0;
   font-family: 'Poppins', sans-serif;
+  overflow: hidden;
 }
 /* .rightside{
   padding: 10px;
@@ -190,13 +191,14 @@ header{
   padding: 10px;
 } */
 
-#meters img{
+.payments img{
   max-width: 420px;
   /* width: 100%; */
   top: 0;
   left: 0;
+  padding: 20px;
 }
-#meters li{
+.payments li{
   font-weight: 600;
   display: list-item;
   padding: 5px 0 10px 20px;
@@ -205,7 +207,7 @@ header{
   z-index: 2;
 }
 
-#meters a{
+.payments a{
   padding-left: 50px;
   color: rgb(39, 157, 39);
   text-decoration: none;
@@ -214,11 +216,11 @@ header{
   display: inline-block;
 }
 
-#meters ul li::before{
+.payments ul li::before{
   content: '';
   background: #F1FEF4;
 }
-#meters li::before{
+.payments li::before{
   content: '';
   position: absolute;
   left: -10px;
@@ -229,12 +231,12 @@ header{
   z-index: -1;
 }
 
-#meters ul li::after{
+.payments ul li::after{
   content: '';
   background-image: url(../img/check.svg);
 }
 
-#meters li::after{
+.payments li::after{
   content: '';
   
   background-size: cover;
@@ -375,3 +377,25 @@ footer .subscribe-input{
   border-radius:5px; 
   outline:none;
 }
+
+
+.navbar .megamenu{ padding: 1rem; }
+
+/* ============ desktop view ============ */
+@media all and (min-width: 992px) {
+
+  .navbar .has-megamenu{position:static!important;}
+  .navbar .megamenu{left:0; right:0; width:100%; margin-top:0;  }
+
+}	
+/* ============ desktop view .end// ============ */
+
+/* ============ mobile view ============ */
+@media(max-width: 991px){
+  .navbar.fixed-top .navbar-collapse, .navbar.sticky-top .navbar-collapse{
+    overflow-y: auto;
+      max-height: 90vh;
+      margin-top:10px;
+  }
+}
+/* ============ mobile view .end// ============ */
